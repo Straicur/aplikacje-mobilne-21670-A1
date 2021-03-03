@@ -1,0 +1,1 @@
+# aplikacje-mobilne-21670-A1
