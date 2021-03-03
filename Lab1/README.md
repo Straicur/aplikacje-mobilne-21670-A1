@@ -1,5 +1,6 @@
 # aplikacje-mobilne-21670-A1
 ![list](/Lab1/SCR/1.PNG "Start")
+<br>
 ![list](/Lab1/SCR/2.PNG "Start")
 ![list](/Lab1/SCR/3.PNG "Start")
 
