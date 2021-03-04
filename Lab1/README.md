@@ -32,6 +32,8 @@
 
 <br>
 
+# Classa App z całą logiką
+
 ```JS
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
@@ -197,6 +199,8 @@ const styles = StyleSheet.create({
 });
 
 ```
+
+# Komponent InputNumberButton
 
 ```JS
 mport { StatusBar } from 'expo-status-bar';
