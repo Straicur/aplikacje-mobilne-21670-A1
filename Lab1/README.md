@@ -1,8 +1,17 @@
 # aplikacje-mobilne-21670-A1
-![list](/Lab1/SCR/1.PNG "Start")
 <br>
 ![list](/Lab1/SCR/2.PNG "Start")
 ![list](/Lab1/SCR/3.PNG "Start")
+<br>
+![list](/Lab1/SCR/4.PNG "Start")
+![list](/Lab1/SCR/5.PNG "Start")
+<br>
+![list](/Lab1/SCR/6.PNG "Start")
+![list](/Lab1/SCR/7.PNG "Start")
+<br>
+![list](/Lab1/SCR/8.PNG "Start")
+![list](/Lab1/SCR/9.PNG "Start")
+<br>
 
 ```JS
 import { StatusBar } from 'expo-status-bar';
