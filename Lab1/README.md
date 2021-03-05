@@ -1,4 +1,4 @@
-# Prosty kalkulator napisany w React-CLI
+# Prosty kalkulator napisany w React-CLI z Expo
 <br>
 
 # Proste działania
