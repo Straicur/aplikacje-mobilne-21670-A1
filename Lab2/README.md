@@ -229,7 +229,7 @@ export default function Home({navigation}) {
   }
 ```
 
-![list](/Lab1/SCR/1.PNG "Start")
+![list](/Lab2/SCR/1.PNG "Start")
 
 ## HookUseState.js
 
@@ -272,7 +272,7 @@ export default function HookUseState({navigation}) {
   }
 ```
 
-![list](/Lab1/SCR/2.PNG "Start")
+![list](/Lab2/SCR/2.PNG "Start")
 
 ## RestParameters.js
 
@@ -308,7 +308,7 @@ myF(1,2,3,4,5);`
   }
 ```
 
-![list](/Lab1/SCR/3.PNG "Start")
+![list](/Lab2/SCR/3.PNG "Start")
 
 ## SpreadOperator.js
 
@@ -358,5 +358,5 @@ Math.max(...tab); //5`
   }
 ```
 
-![list](/Lab1/SCR/4.PNG "Start")
+![list](/Lab2/SCR/4.PNG "Start")
 
