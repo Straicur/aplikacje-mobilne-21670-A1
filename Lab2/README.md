@@ -239,7 +239,7 @@ export default styles
 
 ## Home.js
 
-Home jest to domyślny ekran z przyciskami przekierowywujacy do odpowiedniego ekranu.
+Home jest to domyślny ekran z przyciskami przekierowywujacymi do odpowiedniego ekranu.
 
 ``` JS
 import * as React from 'react';
