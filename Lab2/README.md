@@ -2,6 +2,7 @@
 <br>
 
 ## Zadanie
+
 <br>
 <ul>
   <li>utworzyć 3 ekrany , na każdym umiescić opisy o spread operator,rest parameters i 'hook' useState </li>
@@ -9,16 +10,26 @@
   <li>style w odzielnym pliku</li>
 </ul>  
 <br>
+Tak jak wyżej wymieniłem , stworzyłem 4 ekrany przy pomocy @react-navigation + @react-navigation/stack o nazwie:
+<ul>
+  <li>Home</li>
+  <li>HookUseState</li>
+  <li>RestParameters</li>
+  <li>SpreadOperator</li>
+</ul>
+Każdy z nich jest oddzielnym komponentem. Style zostały zawarte w oddzielnym pliku i odpowiednio zaimportowane.
 
 ## Wykorzystane narzędzia
+
 Aplikacja głównie korzysta z @react-navigation.
 <br>
 Moduły wykorzystane do stworzenia oddzielnych ekranów:
 <ul>
   <li>@react-navigation/native</li>
-  <li>@react-navigation/native</li>
+  <li>@react-navigation/stack</li>
 </ul>
 <br>
+
 ## App.js
 
 Główny widok odpowiadający za nawigację po ekranach , Home ustawiony został na domyślny.
@@ -49,6 +60,7 @@ function App() {
 
 export default App;
 ```
+
 ## styles.js
 
 Style są oddzielne dla każdego ekranu i ostylowane w innym stylu.
@@ -224,6 +236,7 @@ const styles = {}
 
 export default styles
 ```
+
 ## Home.js
 
 Home jest to domyślny ekran z przyciskami przekierowywujacy do odpowiedniego ekranu.
