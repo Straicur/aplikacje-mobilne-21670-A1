@@ -1,8 +1,38 @@
-# aplikacje-mobilne-21670-A1
-![list](/Lab1/SCR/1.PNG "Start")
+# Prosty kalkulator napisany w React-CLI z Expo
 <br>
+
+# Proste działania
+<br>
+
+## Dodawanie
+
 ![list](/Lab1/SCR/2.PNG "Start")
 ![list](/Lab1/SCR/3.PNG "Start")
+
+<br>
+
+## Mnożenie
+
+![list](/Lab1/SCR/4.PNG "Start")
+![list](/Lab1/SCR/5.PNG "Start")
+
+<br>
+
+## Dzielenie
+
+![list](/Lab1/SCR/6.PNG "Start")
+![list](/Lab1/SCR/7.PNG "Start")
+
+<br>
+
+## Modulo
+
+![list](/Lab1/SCR/8.PNG "Start")
+![list](/Lab1/SCR/9.PNG "Start")
+
+<br>
+
+# Classa App z całą logiką
 
 ```JS
 import { StatusBar } from 'expo-status-bar';
@@ -169,6 +199,8 @@ const styles = StyleSheet.create({
 });
 
 ```
+
+# Komponent InputNumberButton
 
 ```JS
 mport { StatusBar } from 'expo-status-bar';
