@@ -1,19 +1,16 @@
 # React-CLI z Expo
 <br>
 
-## Zadanie
+## Narzędzia 
+
+Nawigacja w aplikacji prawię się nie zmieniła od poprzedniego labolatorium, natomiast stworzyłem 5 nowych scen na potrzebę labolatorium
 <br>
+Aplikacja po włączeniu wyślwietla 3 przyciski z różnym działaniem:
 <ul>
-  <li></li>
-  <li></li>
+  <li>Filter Sort - Przekierowuje do komponentu który ma w sobie 100 pseudolosowych liczb wyświetlanych przy pomocy map() i umożliwia ich posortowanie</li>
+  <li>Lazy Loading - Przekierowuje do komponentu który demonstruje działanie React.lazy() i ukazuje ładowanie się string o długości 100 000 wygenerowanego przez odpowiedni komponent</li>
+  <li>First Step Progress - Przekierowuje do komponentu który ukazuje działanie progresu krokowego złożonego z 3 kroków z różnymi wyglądami ***ActivityIndicator***</li>
 </ul>  
-<br>
-Tak jak wyżej wymieniłem , stworzyłem 4 ekrany przy pomocy @react-navigation + @react-navigation/stack o nazwie:
-<ul>
-  <li></li>
-  <li></li>
-</ul>
-Każdy z nich jest oddzielnym komponentem. Style zostały zawarte w oddzielnym pliku i odpowiednio zaimportowane.
 
 
 # Style dla komponentów
@@ -147,6 +144,8 @@ export default styles
 
 # Komponenty
 
+![list](/Lab3/SCR/9.PNG "Start")
+
 ## App.js
 
 Główny widok odpowiadający za nawigację po ekranach , Home ustawiony został na domyślny
@@ -183,6 +182,8 @@ export default App;
 ## Home.js
 
 Home jest to domyślny ekran z przyciskami przekierowywujacymi do odpowiedniego ekranu
+
+
 
 ```js
 import * as React from 'react';
