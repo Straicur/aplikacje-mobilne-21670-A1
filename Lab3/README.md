@@ -1,7 +1,7 @@
 # React-CLI z Expo
 <br>
 
-## Narzędzia 
+# Narzędzia 
 
 Nawigacja w aplikacji prawię się nie zmieniła od poprzedniego labolatorium, natomiast stworzyłem 5 nowych scen na potrzebę labolatorium
 <br>
