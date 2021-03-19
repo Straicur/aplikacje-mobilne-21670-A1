@@ -20,11 +20,11 @@ Każdy z nich jest oddzielnym komponentem. Style zostały zawarte w oddzielnym p
 # Style dla komponentów
 
 <br>
-<ul>
-  <li>***styles.home*** zawiera style do ***App.js*** </li>
-  <li>***styles.filterSort*** zawiera style do ***FilterSort.js*** </li>
-  <li>***styles.lazyLoading*** zawiera style do ***LazyLoading.js*** </li>
-</ul>  
+
+  - ***styles.home*** zawiera style do ***App.js*** </li>
+  - ***styles.filterSort*** zawiera style do ***FilterSort.js*** </li>
+  - ***styles.lazyLoading*** zawiera style do ***LazyLoading.js*** </li>
+  
 <br>
 
 ## styles.js
