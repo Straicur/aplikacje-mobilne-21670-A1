@@ -9,7 +9,7 @@ Aplikacja po włączeniu wyślwietla 3 przyciski z różnym działaniem:
 <ul>
   <li>Filter Sort - Przekierowuje do komponentu który ma w sobie 100 pseudolosowych liczb wyświetlanych przy pomocy map() i umożliwia ich posortowanie</li>
   <li>Lazy Loading - Przekierowuje do komponentu który demonstruje działanie React.lazy() i ukazuje ładowanie się string o długości 100 000 wygenerowanego przez odpowiedni komponent</li>
-  <li>First Step Progress - Przekierowuje do komponentu który ukazuje działanie progresu krokowego złożonego z 3 kroków z różnymi wyglądami ***ActivityIndicator***</li>
+  <li>First Step Progress - Przekierowuje do komponentu który ukazuje działanie progresu krokowego złożonego z 3 kroków z różnymi wyglądami ***ActivityIndicator*** </li>
 </ul>  
 
 
