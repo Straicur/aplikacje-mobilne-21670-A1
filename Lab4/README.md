@@ -1,16 +1,18 @@
 # React-CLI z Expo
-<br>
+
 
 # Działanie 
 
 
-Nawigacja w aplikacji prawię się nie zmieniła od poprzedniego labolatorium, natomiast stworzyłem 5 nowych scen na potrzebę labolatorium
+Nawigacja w aplikacji prawię się nie zmieniła od poprzedniego labolatorium, natomiast stworzyłem 5 nowych ekranów na potrzebę labolatorium
 <br>
-Aplikacja po włączeniu wyślwietla 3 przyciski z różnym działaniem:
+Aplikacja po włączeniu wyślwietla 5 przyciski z różnym działaniem:
 <ul>
-  <li>Filter Sort - Przekierowuje do komponentu który ma w sobie 100 pseudolosowych liczb wyświetlanych przy pomocy map() i umożliwia ich posortowanie</li>
-  <li>Lazy Loading - Przekierowuje do komponentu który demonstruje działanie React.lazy() i ukazuje ładowanie się string o długości 100 000 wygenerowanego przez odpowiedni komponent</li>
-  <li>First Step Progress - Przekierowuje do komponentu który ukazuje działanie progresu krokowego złożonego z 3 kroków z różnymi wyglądami ActivityIndicator </li>
+  <li>Text Input - </li>
+  <li>Picker Select - </li>
+  <li>Switch - </li>
+  <li>Toast - </li>
+  <li>DatePicker - </li>
 </ul>  
 
 
@@ -19,8 +21,11 @@ Aplikacja po włączeniu wyślwietla 3 przyciski z różnym działaniem:
 <br>
 
   - ***styles.home*** zawiera style do ***App.js*** </li>
-  - ***styles.filterSort*** zawiera style do ***FilterSort.js*** </li>
-  - ***styles.lazyLoading*** zawiera style do ***LazyLoading.js*** </li>
+  - ***styles.PickerSelect*** zawiera style do ***PickerSelect.js*** </li>
+  - ***styles.Toast*** zawiera style do ***Toast.js*** </li>
+  - ***styles.SwitchScr*** zawiera style do ***SwitchScr.js*** </li>
+  - ***styles.TextInput*** zawiera style do ***TextInput.js*** </li>
+  - ***styles.DatePicker*** zawiera style do ***DatePicker.js*** </li>
 
 <br>
 
@@ -310,6 +315,8 @@ export default function Home({navigation}) {
 
 ## TextInput.js
 
+W tym ekranie przedstawiono wykorzystanie propsów takich jak: placeholder, value, defaultValue, autoCorrect, maxLength, multiline, secureTextEntry,keyboardType ,editable oraz zdarzenie onChange wyświetlające aletr przy zmianie wartości inputa
+
 ```js
 import React ,{Component}  from 'react';
 import { View, Text, Button, TouchableOpacity ,TextInput ,ScrollView} from 'react-native';
@@ -361,6 +368,7 @@ export default class FilterSort extends Component {
       }
   }
 ```
+Pokaz działania wszystkich inputów:
 
 ![list](/Lab4/SCR/1.PNG "Start")
 
@@ -368,33 +376,11 @@ export default class FilterSort extends Component {
 
 ![list](/Lab4/SCR/3.PNG "Start")
 
-## Select.js
 
-```js
-import React from "react";
-import PropTypes from "prop-types";
-import { View, Picker, Text } from "react-native";
-import styles from '../static/styles';
-export default function Select(props) {
- return (
-    <View>
-        <Text style={styles.PickerSelect.pickerLabel}>{props.label}</Text>
-        <Picker {...props}>
-            {props.items.map(i => (
-                <Picker.Item key={i.label} {...i} />
-        ))}
-        </Picker>
-    </View>
-    );
-}
-Select.propTypes = {
-    items: PropTypes.array,
-    label: PropTypes.string
-};
-
-```
 
 ## SwitchScr.js
+
+Ekran przedstawiający  wykorzystanie komponentu Switch do wyświetlanie modalu. Modal wyświetla się po kliknięciu Switcha. Modal wyświetla pseudolosową liczbę z przedziału 0 - 100 i przycisk do powrotu
 
 ```js
 import React ,{Component}  from 'react';
@@ -443,11 +429,45 @@ export default class SwitchScr extends Component {state = {
 
 
 ```
+Wygląd startowy
+
 ![list](/Lab4/SCR/6.PNG "Start")
+
+Po kliknięciu w Switch
 
 ![list](/Lab4/SCR/7.PNG "Start")
 
+## Select.js
+
+Prosty komponent select z funkcją map() wykorzystywany później
+
+```js
+import React from "react";
+import PropTypes from "prop-types";
+import { View, Picker, Text } from "react-native";
+import styles from '../static/styles';
+export default function Select(props) {
+ return (
+    <View>
+        <Text style={styles.PickerSelect.pickerLabel}>{props.label}</Text>
+        <Picker {...props}>
+            {props.items.map(i => (
+                <Picker.Item key={i.label} {...i} />
+        ))}
+        </Picker>
+    </View>
+    );
+}
+Select.propTypes = {
+    items: PropTypes.array,
+    label: PropTypes.string
+};
+
+```
+
 ## PickerSelect.js
+
+Ekran ten ukazuje zastosowanie komponentu Picker i wsczesniej stworzonego Select. Po wybraniu z piwerwszej listy wartości aktualizowana jest wartość drugiej listy. Listy zostały zadeklarowane wcześniej i przy pomocy funkcji filter dane są aktualizowane. Po wyborze z drugiej listy ilości wypisywane dane. 
 
 ```js
 import React ,{Component,useState}  from 'react';
@@ -514,12 +534,17 @@ export default function PickerSelect() {
         );
    }
 ```
+Widok po wyborze podzeslołu , po wyborze podzespołu ilość zostaje zaktualizowana
 
 ![list](/Lab4/SCR/4.PNG "Start")
+
+Widok wyboru ilości 
 
 ![list](/Lab4/SCR/5.PNG "Start")
 
 ## ToastScr.js
+
+Ekran ten przedstawia wykorzystanie Toasta i Modala. Modal zamyka się po wyświetlonym w nim czasie który generowany jest w obiekcie promise i obiekt ten wysyła wartość 'ukryj' która wyłącza modal , natomiast toast wyłącza się samoistnie po upływie czasu.  
 
 ```js
 import React ,{Component , useEffect, useState}  from 'react';
@@ -615,12 +640,17 @@ export default class ToastScr extends Component {
       }
   }
 ```
+Widok po przejściu w ekran 
 
 ![list](/Lab4/SCR/8.PNG "Start")
+
+Widok po kliknięciu 
 
 ![list](/Lab4/SCR/9.PNG "Start")
 
 ## DatePicker.js
+
+Ekran ten przedstawia wykorzystanie komponentu DatePicker. Po kliknięciu w przycisk wyświetla się nam kalędaż a po nim zegarek , po wybraniu daty i godziny zostaje ona wyświetlona w polu powyrzej przycisku.
 
 ```js
 import React ,{Component}  from 'react';
@@ -679,10 +709,18 @@ export default class TextInput extends Component {
   }
 ```
 
+Widok po wejściu w DatePicker
+
 ![list](/Lab4/SCR/10.PNG "Start")
+
+Widok po kliknięciu w przycisk 
 
 ![list](/Lab4/SCR/11.PNG "Start")
 
+Widok po wyborze daty 
+
 ![list](/Lab4/SCR/13.PNG "Start")
+
+Widok po wyborze daty i godziny z wypisaniem danych 
 
 ![list](/Lab4/SCR/14.PNG "Start")
