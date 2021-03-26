@@ -8,11 +8,11 @@ Nawigacja w aplikacji prawię się nie zmieniła od poprzedniego labolatorium, n
 <br>
 Aplikacja po włączeniu wyślwietla 5 przyciski z różnym działaniem:
 <ul>
-  <li>Text Input - </li>
-  <li>Picker Select - </li>
-  <li>Switch - </li>
-  <li>Toast - </li>
-  <li>DatePicker - </li>
+  <li>Text Input - przegląd możliwości TextInput</li>
+  <li>Picker Select - obsługa dwóch selectów , zmiana w jednym powoduje zmiene w drugim</li>
+  <li>Switch - obsługa przełącznika Switch tak aby po zmianie pojawiał się modal z pseudolosową liczbą</li>
+  <li>Toast - Aktywny modal , pasywne powiadomienia za pomocą Toast, wykorzystanie obiektu promise z setTimeout() i modal</li>
+  <li>DatePicker - Wybór daty i czasu i wyświetlenie danych</li>
 </ul>  
 
 
