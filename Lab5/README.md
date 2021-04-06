@@ -189,7 +189,7 @@ export default App;
 
 Home jest to domyślny ekran z przyciskami przekierowywujacymi do odpowiedniego ekranu
 
-![list](/Lab4/SCR/1.PNG "Start")
+![list](/Lab5/SCR/1.PNG "Start")
 
 ```js
 import * as React from 'react';
@@ -254,11 +254,11 @@ export default class FirstScroll extends Component {
 
 Po kliknieciu w przycisk
 
-![list](/Lab4/SCR/2.PNG "Start")
+![list](/Lab5/SCR/2.PNG "Start")
 
 Po przesunięciu w dół
 
-![list](/Lab4/SCR/3.PNG "Start")
+![list](/Lab5/SCR/3.PNG "Start")
 
 ## SecondScroll.js 
 
@@ -294,11 +294,11 @@ export default class SecondScroll extends Component {
 
 Po kliknieciu w przycisk
 
-![list](/Lab4/SCR/4.PNG "Start")
+![list](/Lab5/SCR/4.PNG "Start")
 
 Po przesunięciu w dół
 
-![list](/Lab4/SCR/5.PNG "Start")
+![list](/Lab5/SCR/5.PNG "Start")
 
 ## SwipeScreen.js
 
@@ -383,19 +383,19 @@ export default class  SwipeScreen extends Component{
 ```
 Startowy widok
 
-![list](/Lab4/SCR/6.PNG "Start")
+![list](/Lab5/SCR/6.PNG "Start")
 
 Różne stopnie przesuniecia po zaczęciu przesuwania
 
-![list](/Lab4/SCR/7.PNG "Start")
+![list](/Lab5/SCR/7.PNG "Start")
 
 Po przekroczeniu odpowiedniego dystansu zmiana koloru i textu
 
-![list](/Lab4/SCR/8.PNG "Start")
+![list](/Lab5/SCR/8.PNG "Start")
 
 Po puszczeniu widoku zmiana koloru
 
-![list](/Lab4/SCR/9.PNG "Start")
+![list](/Lab5/SCR/9.PNG "Start")
 
 ## TouchableScreen
 
@@ -470,14 +470,14 @@ export default class TouchableScreen extends Component {
 
 Widok po wejśiu 
 
-![list](/Lab4/SCR/10.PNG "Start")
+![list](/Lab5/SCR/10.PNG "Start")
 
 Po kliknięciu TouchableOpacity
 
-![list](/Lab4/SCR/11.PNG "Start")
+![list](/Lab5/SCR/11.PNG "Start")
 
 Po kliknięciu TouchableHighlight. Po dłuższym przytrzymaniu kliknięcia licznik się nie iteruje
 
-![list](/Lab4/SCR/12.PNG "Start")
+![list](/Lab5/SCR/12.PNG "Start")
 
 
