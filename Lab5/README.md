@@ -157,11 +157,10 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from './React_Components/screen/Home';
-import TextInput from './React_Components/screen/TextInput';
-import PickerSelect from './React_Components/screen/PickerSelect';
-import SwitchScr from './React_Components/screen/SwitchScr';
-import ToastScr from './React_Components/screen/ToastScr';
-import DatePicker from './React_Components/screen/DatePicker';
+import FirstScroll from './React_Components/screen/FirstScroll';
+import SecondScroll from './React_Components/screen/SecondScroll';
+import SwipeScreen from './React_Components/screen/SwipeScreen';
+import TouchableScreen from './React_Components/screen/TouchableScreen';
 
 
 const Stack = createStackNavigator();
@@ -171,17 +170,17 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={Home} />      
-        <Stack.Screen name="TextInput" component={TextInput} />
-        <Stack.Screen name="PickerSelect" component={PickerSelect} />
-        <Stack.Screen name="SwitchScr" component={SwitchScr} />
-        <Stack.Screen name="ToastScr" component={ToastScr} />
-        <Stack.Screen name="DatePicker" component={DatePicker} />
+        <Stack.Screen name="FirstScroll" component={FirstScroll} />
+        <Stack.Screen name="SecondScroll" component={SecondScroll} />
+        <Stack.Screen name="SwipeScreen" component={SwipeScreen} />
+        <Stack.Screen name="TouchableScreen" component={TouchableScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
 export default App;
+
 
 ```
 
@@ -199,22 +198,18 @@ import styles from '../static/styles';
 export default function Home({navigation}) {
     return (
       <View style={styles.home.homeContainer}>
-        <TouchableOpacity style={styles.home.homeButton}  onPress={() => navigation.navigate('TextInput')} >
-          <Text style={styles.home.homeText}>Text Input</Text>
+        <TouchableOpacity style={styles.home.homeButton}  onPress={() => navigation.navigate('FirstScroll')} >
+          <Text style={styles.home.homeText}>First Scroll</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.home.homeButton}  onPress={() => navigation.navigate('PickerSelect')} >
-          <Text style={styles.home.homeText}>Picker Select</Text>
+        <TouchableOpacity style={styles.home.homeButton}  onPress={() => navigation.navigate('SecondScroll')} >
+          <Text style={styles.home.homeText}>Second Scroll</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.home.homeButton} onPress={() => navigation.navigate('SwitchScr')} >
-          <Text style={styles.home.homeText}>Switch</Text>
+        <TouchableOpacity style={styles.home.homeButton} onPress={() => navigation.navigate('SwipeScreen')} >
+          <Text style={styles.home.homeText}>Swipe Screen</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.home.homeButton} onPress={() => navigation.navigate('ToastScr')} >
-          <Text style={styles.home.homeText}>Toast</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.home.homeButton} onPress={() => navigation.navigate('DatePicker')} >
-          <Text style={styles.home.homeText}>DatePicker</Text>
-        </TouchableOpacity>
-        
+        <TouchableOpacity style={styles.home.homeButton} onPress={() => navigation.navigate('TouchableScreen')} >
+          <Text style={styles.home.homeText}>Touchable Screen</Text>
+        </TouchableOpacity> 
       </View>
     );
   }
