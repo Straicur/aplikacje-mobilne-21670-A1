@@ -314,6 +314,8 @@ export default function Home({navigation}) {
 
 ## ImageScreen.js
 
+Komponent ładuje 2 obrazu identycznej rozdzielczosci ładowane na dwa sposoby. Sposób ładowania z assets jest ciut szybszy.
+
 ```js
 import React ,{Component}  from 'react';
 import { View,Image, Text, Button, TouchableOpacity,ScrollView  } from 'react-native';
@@ -348,12 +350,14 @@ export default class ImageScreen extends Component {
   }
 ```
 
+Wygląd komponentu
+
 ![list](/Lab6/SCR/1.PNG "Start")
 
 
 ## ResizeImageScreen.js
 
-
+Ekran korzysta z Slider i jego metody onValueChange  aby zmieniać rozmiar komponentu Image.
 
 ```js
 import React ,{Component}  from 'react';
@@ -394,15 +398,21 @@ export default class ResizeImageScreen extends Component {
   }
 ```
 
+Wygląd ekranu ze stanem początkowym 
+
 ![list](/Lab6/SCR/2.PNG "Start")
 
+Wygląd ekranu po przesunięiu slidera w lewo(zmniejszenie)
+
 ![list](/Lab6/SCR/3.PNG "Start")
+
+Wygląd ekranu po przesunięiu slidera w prawo(zwiększenie)
 
 ![list](/Lab6/SCR/4.PNG "Start")
 
 ## LazyIconsScreen.js
 
-
+Ekran ładuje obraz rozdzielczości 7680x4320px oraz dużą ilość ikon. Obraz ładuje się praktycznie natychmiastowo natomias ikony potrzebują chwili.
 
 ```js
 import React ,{Component}  from 'react';
@@ -562,13 +572,17 @@ export default class LazyIconsScreen extends Component {
   }
 ```
 
+Ekran po wejściu 
+
 ![list](/Lab6/SCR/5.PNG "Start")
+
+Ekran po odczekaniu chwili i ząładowaniu się wszystkich ikon
 
 ![list](/Lab6/SCR/6.PNG "Start")
 
 ## ConnectionScreen.js
 
-
+Ekran ten wyświetla informacje o połączeniu gdy jest włączone i wyłączone przy pomocy NetInfo.
 
 ```js
 import React ,{Component}  from 'react';
@@ -669,13 +683,17 @@ export default class ConnectionScreen extends Component {
 
 ```
 
+Informacje o sieci przy włączonym połączeniu
+
 ![list](/Lab6/SCR/7.PNG "Start")
+
+Informacje o sieci przy wyłączonym połączeniu
 
 ![list](/Lab6/SCR/8.PNG "Start")
 
 ## AsyncStorageScreen.js
 
-
+Ekran zawiera dwa formularze. Pierwszy pozwala na dodanie wprowadzonych danych do zasobów lokalnych natomiast drugi pozwala na wyświetlenie zapisanych danych przy pomocy klucza.
 
 ```js
 import React, {Component, useEffect, useState } from 'react';
@@ -751,13 +769,17 @@ render(){
     }
 ```
 
+Ekran startowy i dodanie wartości
+
 ![list](/Lab6/SCR/9.PNG "Start")
+
+Wyświetlenie wartości w alercie 
 
 ![list](/Lab6/SCR/10.PNG "Start")
 
 ## Store.js
 
-
+Komponent kóry zawiera całą logikę odpowiadającą za ,jest wykorzystywany później.
 
 ```js
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -841,7 +863,7 @@ NetInfo.addEventListener(connection => {
 
 ## SyncScreen.js
 
-
+Komponent ten wykorzystuje funkcje set i get z komponentu store oraz zawarta jest w nim już całe działanie. Po kliknięciu w Switch w zależności od stanu połączenia 
 
 ```js
 import React, { useState, useEffect } from "react";
@@ -926,6 +948,10 @@ export default function SyncScreen (){
 }
 ```
 
-![list](/Lab6/SCR/11.PNG "Start")
+Wygląd ekranu po kliknieiu w slider z włączonym połączeniem z siecią (pojawia się wiadomość że zapisaliśmy dane online)
 
 ![list](/Lab6/SCR/12.PNG "Start")
+
+Wygląd ekranu po kliknieiu w slider z wyłączonym połączeniem z siecią (pojawia się wiadomość że zapisaliśmy dane offline)
+
+![list](/Lab6/SCR/11.PNG "Start")
