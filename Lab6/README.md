@@ -7,7 +7,7 @@ Aplikacja po włączeniu wyślwietla 6 przyciski z różnym działaniem:
 <ul>
   <li>Obrazy - </li>
   <li>Zmiana rozmiaru - </li>
-  <li>Leniwe ładowanie i ikony - </li>
+  <li>Leniwe ładowanie i ikony - EvilIcons,Ionicons,SimpleLineIcons</li>
   <li>Stan połączenia - </li>
   <li>Zapis danych - </li>
   <li>Synchronizacja danych - </li>
