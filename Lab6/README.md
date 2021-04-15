@@ -779,7 +779,7 @@ Wyświetlenie wartości w alercie
 
 ## Store.js
 
-Komponent kóry zawiera całą logikę odpowiadającą za ,jest wykorzystywany później.
+Komponent kóry zawiera całą logikę odpowiadającą za zapisywanie i pobieranie  danych przy pomocy NetInfo  i jego eventLisenera , nasłuchuje zmian w połączeniu oraz zajmuje się synchronizacją danych przy trybie offline przy urzyciu AsyncStorage , jest wykorzystywany później.
 
 ```js
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -863,7 +863,7 @@ NetInfo.addEventListener(connection => {
 
 ## SyncScreen.js
 
-Komponent ten wykorzystuje funkcje set i get z komponentu store oraz zawarta jest w nim już całe działanie. Po kliknięciu w Switch w zależności od stanu połączenia 
+Komponent ten wykorzystuje funkcje set i get z komponentu store oraz zawarta jest w nim już całe działanie. Po kliknięciu w Switch w zależności od stanu połączenia.
 
 ```js
 import React, { useState, useEffect } from "react";
