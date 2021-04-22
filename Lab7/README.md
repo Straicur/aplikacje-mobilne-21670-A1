@@ -4,18 +4,21 @@
 
 
 <br>
-Aplikacja po włączeniu wyślwietla 5 przyciski z różnym działaniem:
+Aplikacja po włączeniu wyślwietla 6 przyciski z różnym działaniem:
 <ul>
-  <li>Zarejestruj - </li>
-  <li>Edycja - </li>
-  <li>Wyszukaj - </li>
-  <li>Wypisz wszystko - </li>
-  <li>Usuń - </li>
+  <li>Home - Ekran główny</li>
+  <li>Zarejestruj - Ekran z możliwością dodania użytkownika do bazy danych</li>
+  <li>Edycja - Ekran z możliwością edycji użytkownika z bazy po podaniu jego id i wpisaniu danych do edycji</li>
+  <li>Wyszukaj - Ekran z możliwością wyszukania użytkownika po id</li>
+  <li>Wypisz wszystko - Ekran wypisujacy wszystkich użytkowników z bazy</li>
+  <li>Usuń - Ekran umożliwiajacy usunięcie użytkonika po podaniu jego id</li>
 </ul>  
 
 # Komponenty
 
 ## Mybutton.js 
+
+Customowy Button wykorzystywany w cąłej aplikacji
 
 ``` JS
 import React from 'react';
@@ -55,6 +58,8 @@ export default Mybutton;
 
 ## Mytext.js 
 
+Customowy Text wykorzystywany w cąłej aplikacji
+
 ``` JS
 
 import React from 'react';
@@ -78,6 +83,8 @@ export default Mytext;
 ```
 
 ## Mytextinput.js 
+
+Customowy TextInput wykorzystywany w cąłej aplikacji
 
 ``` JS
 import React from 'react';
@@ -117,6 +124,8 @@ export default Mytextinput;
 # Ekrany
 
 ## App.js
+
+Główny widok odpowiadający za nawigację po ekranach , Home ustawiony został na domyślny
 
 ``` JS
 import 'react-native-gesture-handler';
@@ -234,6 +243,8 @@ export default App;
 
 ## HomeScreen.js
 
+Jest to domyślny ekran z przyciskami przekierowywujacymi do odpowiedniego ekranu. Tworzona jest tutaj Baza danych oraz tworzone są tu odpowiednie kolumny do bazy
+
 ``` JS
 import React, { useEffect } from 'react';
 import { View, Text, SafeAreaView } from 'react-native';
@@ -297,9 +308,13 @@ const HomeScreen = ({ navigation }) => {
 export default HomeScreen;
 ```
 
+Wygląd ekranu startowego
+
 ![list](/Lab7/SCR/1.PNG "Start")
 
 ## RegisterUser.js
+
+Komponent ten odpowiada za dodanie użytkownika do bazy danych. Po podaniu danych do inputów wykonywany jest setState a po kliknięciu przycisku zostaje wykonywane zapytanie SQL pyrz pomocy funkcji strzałkowej i jeżeli dane były poprawne użytkownik zostaje dodany do bazy
 
 ``` JS
 
@@ -409,11 +424,17 @@ const RegisterUser = ({ navigation }) => {
 export default RegisterUser;
 ```
 
+Wpisanie danych 
+
 ![list](/Lab7/SCR/2.PNG "Start")
+
+Po kliknięciu przycisku użytkownik zostaje dodany
 
 ![list](/Lab7/SCR/3.PNG "Start")
 
 ## UpdateUser.js
+
+Ekran ten odpowiada za edycje użytkownika po podaniu jed id. Po podaniu Id i kliknięciu przycisku z bazy danych zostają pobrane dane odpowiedniego użytkownika i zostają wpisane do umieszczonych niżej inputów. Po zmianie danych i kliknięciu przycisku zostaje wywoływana funkcja strzałkowa która wywołuje zapytanie UPDATE do naszej bazy danych i edytuje dane odpowiedniego użytkownika
 
 ``` JS
 import React, { useState } from 'react';
@@ -573,11 +594,17 @@ const UpdateUser = ({ navigation }) => {
 export default UpdateUser;
 ```
 
+Widok po wpisaniu odpowiedniego id , kliknięciu przycisku oraz wpisaniu zmienionych danych
+
 ![list](/Lab7/SCR/4.PNG "Start")
+
+Widok po kliknięciu przycisku i udanej edycji użytkownika
 
 ![list](/Lab7/SCR/5.PNG "Start")
 
 ## ViewUser.js
+
+Ekran ten umożliwia wyświetlenie użytkownika po podaniu jego id i kliknieciu przycisku. Po wpisaniu i kliknięciu przycisku zostaje wykonane zapytanie SQL Select które pobiera nam użytkownika o odpowiednim id i wyświetla go poniżej inputu 
 
 ``` JS
 import React, { useState } from 'react';
@@ -644,9 +671,13 @@ const ViewUser = () => {
 export default ViewUser;
 ```
 
+Widok po wpisaniu odpowiedniego id i kliknięciu przycisku
+
 ![list](/Lab7/SCR/6.PNG "Start")
 
 ## ViewAllUser.js
+
+Ekran który wyświetla wszystkich użytkowników w naszej bazie danych z tabeli table_user. Najpierw pobierane są dane przy pomocy prostego selecta a następnie przypisywane są do naszego stanu przy pomocy UseState następnie renderowana jest lista która za parametr wejściowy bierze watość zmiennej z useState'a. Po czy renderowana jest już lista wszystkich pobranych elementów przy pomocy funkcji strzałkowej listItemView
 
 ``` JS
 import React, { useState, useEffect } from 'react';
@@ -717,9 +748,13 @@ const ViewAllUser = () => {
 export default ViewAllUser;
 ```
 
+Widok po wejściu w ekran i wyświetlenie wszystkich użytkowniów
+
 ![list](/Lab7/SCR/7.PNG "Start")
 
 ## DeleteUser.js
+
+Ekran który umożliwia usuwanie użytkownika o podamym id z bazy. Po podaniu odpowiedniego Id i kliknięiu wykonywane jest proste zapytanie SQL Delete które usuwana podanego użytkownika z bazy
 
 ``` JS
 
@@ -782,8 +817,14 @@ const DeleteUser = ({ navigation }) => {
 export default DeleteUser;
 ```
 
+Wpisanie id użytkownika którego chcemy usunąć
+
 ![list](/Lab7/SCR/8.PNG "Start")
 
+Widok po kliknięciu przycisku i usunięciu odpowiedniego użytkownika
+
 ![list](/Lab7/SCR/9.PNG "Start")
+
+I jeszcze na potwierdzenie próba wyszukania usuniętego użytkownika
 
 ![list](/Lab7/SCR/10.PNG "Start")
