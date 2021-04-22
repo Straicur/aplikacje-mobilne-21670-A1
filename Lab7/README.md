@@ -125,7 +125,7 @@ export default Mytextinput;
 
 ## App.js
 
-Główny widok odpowiadający za nawigację po ekranach , Home ustawiony został na domyślny
+Główny widok odpowiadający za nawigację po ekranach , HomeScreen ustawiony został na domyślny
 
 ``` JS
 import 'react-native-gesture-handler';
