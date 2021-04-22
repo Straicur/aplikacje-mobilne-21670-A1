@@ -18,7 +18,7 @@ Aplikacja po włączeniu wyślwietla 6 przyciski z różnym działaniem:
 
 ## Mybutton.js 
 
-Customowy Button wykorzystywany w cąłej aplikacji
+Customowy Button wykorzystywany w całej aplikacji
 
 ``` JS
 import React from 'react';
@@ -58,7 +58,7 @@ export default Mybutton;
 
 ## Mytext.js 
 
-Customowy Text wykorzystywany w cąłej aplikacji
+Customowy Text wykorzystywany w całej aplikacji
 
 ``` JS
 
@@ -84,7 +84,7 @@ export default Mytext;
 
 ## Mytextinput.js 
 
-Customowy TextInput wykorzystywany w cąłej aplikacji
+Customowy TextInput wykorzystywany w całej aplikacji
 
 ``` JS
 import React from 'react';
